@@ -1,0 +1,233 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #111;
+    background: white;
+}
+
+.navbar {
+    height: 32px;
+    background: #292929;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5%;
+    color: white;
+}
+
+.navbar h2 {
+    font-size: 14px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 18px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    color: #ff9800;
+}
+
+.hero {
+    height: 445px;
+    background: linear-gradient(to right, #294052, #4ba1ad);
+    text-align: center;
+    padding-top: 180px;
+    color: white;
+}
+
+.hero h1 {
+    font-size: 28px;
+    margin-bottom: 5px;
+}
+
+.hero h1 span {
+    color: #ff9800;
+}
+
+.hero p {
+    font-size: 11px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+button {
+    background: #ff9800;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 7px 16px;
+    font-size: 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #e68900;
+}
+
+.about {
+    text-align: center;
+    padding: 40px 7%;
+    background: white;
+}
+
+.about h2 {
+    font-size: 21px;
+    margin-bottom: 12px;
+}
+
+.about p {
+    font-size: 11px;
+    font-weight: bold;
+    line-height: 1.5;
+}
+
+.skills {
+    background: #eeeeee;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.skills h2 {
+    font-size: 21px;
+    margin-bottom: 20px;
+}
+
+.skill-container {
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+    flex-wrap: wrap;
+}
+
+.skill-card {
+    width: 80px;
+    height: 87px;
+    background: white;
+    border-radius: 7px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.18);
+    transition: 0.3s;
+}
+
+.skill-card:hover {
+    transform: translateY(-5px);
+}
+
+.skill-card i {
+    font-size: 40px;
+}
+
+.skill-card p {
+    font-size: 11px;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.innovation {
+    text-align: center;
+    padding: 0 20px 5px;
+    background: white;
+}
+
+.innovation h2 {
+    font-size: 16px;
+    margin-bottom: 4px;
+}
+
+.project-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.project-card {
+    width: 180px;
+    min-height: 105px;
+    background: #fafafa;
+    padding: 12px 10px;
+    border-radius: 6px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+    transition: 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-4px);
+}
+
+.project-card h3 {
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+
+.project-card p {
+    font-size: 10px;
+    line-height: 1.2;
+}
+
+.contact {
+    background: #eeeeee;
+    text-align: center;
+    padding: 36px 20px;
+}
+
+.contact h2 {
+    font-size: 20px;
+    margin-bottom: 3px;
+}
+
+.contact p {
+    font-size: 10px;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 600px) {
+    .navbar {
+        height: auto;
+        padding: 12px 20px;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .nav-links {
+        gap: 12px;
+    }
+
+    .hero {
+        height: 350px;
+        padding-top: 130px;
+    }
+
+    .hero h1 {
+        font-size: 22px;
+    }
+
+    .about {
+        padding: 30px 20px;
+    }
+
+    .skill-container {
+        gap: 10px;
+    }
+
+    .project-card {
+        width: 90%;
+    }
+}
